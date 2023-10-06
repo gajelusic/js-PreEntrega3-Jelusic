@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Farmacia</title>
+</head>
+
+<body>
+    <div class="parte-usuario">
+        <div id="username-container"></div>
+        <button onclick="changeUsername()">Cambiar Usuario</button>
+    </div>
+    <div>
+        <h1>GJ Farmacia</h1>
+
+        <div class="stock">
+            <h2>Stock:</h2>
+            <div id="stock-output"></div>
+            <ul id="product-list"></ul>
+            <button onclick="mostrarStock()">Actualizar Stock</button>
+            <h3>Reposición:</h3>
+            <label for="replenish-product">Producto:</label>
+            <input type="text" id="replenish-product" placeholder="Nombre">
+            <label for="replenish-quantity">Cantidad:</label>
+            <input type="number" id="replenish-quantity" placeholder="a reponer">
+            <button onclick="replenishStock()">Reponer Stock</button>
+        </div>
+
+        <div>
+            <h2>Venta:</h2>
+            <h3>Seleccione productos:</h3>
+            <label>Productos:</label>
+            <select id="product-select"></select>
+            <label>Cantidad:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button onclick="agregarCarrito()">Agregar al Carrito</button>
+            <h2>Productos seleccionados:</h2>
+            <select id="selected-products" multiple></select>
+            <div class="output" id="output"></div>
+            <button onclick="vender()">Vender</button>
+        </div>
+
+        <div class="agregarNvoProd">
+            <h2>Agregar Nuevo Producto</h2>
+            <label>Nombre:</label>
+            <input type="text" id="new-product-name" placeholder="Nombre">
+            <label>Cantidad:</label>
+            <input type="number" id="new-product-stock" min="0" value="0">
+            <label>Precio por Unidad:</label>
+            <input type="number" id="new-product-price" min="0" value="0">
+            <button onclick="addNewProduct()">Agregar Producto</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

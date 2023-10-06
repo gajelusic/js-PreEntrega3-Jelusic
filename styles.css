@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+button {
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    border-radius: 8px;
+    width: 135px;
+    height: 25px;
+}
+
+.parte-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+select, input {
+    height: auto;
+    width: 150px;
+    background-color: white;
+}
+
+.agregarNvoProd {
+    display: flex;
+    flex-direction: column;
+}
